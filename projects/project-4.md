@@ -1,33 +1,47 @@
 ---
 layout: project
 type: project
-image: images/Unipass.png
-title: Unipass
-permalink: projects/Unipass
+image: images/Amadeus.png
+title: Amadeus
+permalink: projects/Amadeus
 # All dates must be YYYY-MM-DD format!
-date: 2018-12-04
+date: 2018-12-03
 labels:
   - Java
-  - Hashmaps
-  - Encyption
-  - JavaFX
-summary: 🔑 Unipass is a password manager that uses PBE string encryption libraries to locally store, decrypt and view encrypted passwords on your computer.
+  - API
+  - IBM WATSON
+  - Voice Command
+  - API
+summary: Amadeus is a Prototype Voice Assistant Built using IBM Watson and Various API services
 ---
-# Unipass
 
-A password manager that uses PBE string encryption libraries to locally store encrypted passwords on your computer. Allowing only the person who is running the program with the correct key to decrypt user data.
+# Amadeus
+A prototype voice assistant built by utilizing DarkSky forecast, Wikipedia and IBM Watson Speech-To-Text.
+Inspired by the Steins;gate 0 AI
 
-# Pictures
-![alt text](https://i.imgur.com/x12V2dU.png)
+![alt text](https://i.imgur.com/7bojSTa.png)
 
-![alt text](https://i.imgur.com/cxuh5uf.png)
+You have to make the build yourself because API keys are required
 
-![alt text](https://i.imgur.com/QjzrOcA.png)
+# Commands
+Currently Amadeus only supports the following commands, press the up arrow key to trigger the commands
 
-# Libraries
-- Jfoenix 8.07
-- JASYPT 1.92
+- "Whats your name?"
+- "Who made you?"
+- "How Are You?"
+- "What is the time?"
+- "What is the date?"
+- "Whats your birthday?"
+- "**Who is | Tell me about | Whose** < Name >?"
+- "**What is | Tell me about** < Thing >?"
+- "**What is | what's** the Weather?"
 
-# Demo
-- password must be changed in Unipass.java under "this.securitykey"
+# Required API keys
+- Dark Sky Weather API
+- IBM Watson Speech-To-Text API
 
+# Libraries Used
+- Google gson
+- IBM Watson SDK
+- Darksky API wrapper
+- Mary TTS
