@@ -1,44 +1,79 @@
 ---
 layout: project
 type: project
-image: images/micromouse.jpg
-title: Micromouse
-permalink: projects/micromouse
+image: images/SummaryJS.png
+title: Summary.JS
+permalink: projects/SummaryJS
 # All dates must be YYYY-MM-DD format!
 date: 2015-07-01
 labels:
-  - Robotics
-  - Arduino
-  - C++
-summary: My team developed a robotic mouse that won first place in the 2015 UH Micromouse competition.
+  - RAKE
+  - LEXRANK
+  - Node
+  - JavaScript
+  - Summarizer
+summary: A lightweight paragraph summarizer library which can be manipulated to preferred specifications.
 ---
 
-<div class="ui small rounded images">
-  <img class="ui image" src="../images/micromouse-robot.png">
-  <img class="ui image" src="../images/micromouse-robot-2.jpg">
-  <img class="ui image" src="../images/micromouse.jpg">
-  <img class="ui image" src="../images/micromouse-circuit.png">
-</div>
 
-Micromouse is an event where small robot “mice” solve a 16 x 16 maze.  Events are held worldwide.  The maze is made up of a 16 by 16 gird of cells, each 180 mm square with walls 50 mm high.  The mice are completely autonomous robots that must find their way from a predetermined starting position to the central area of the maze unaided.  The mouse will need to keep track of where it is, discover walls as it explores, map out the maze and detect when it has reached the center.  having reached the center, the mouse will typically perform additional searches of the maze until it has found the most optimal route from the start to the center.  Once the most optimal route has been determined, the mouse will run that route in the shortest possible time.
+# Summary.js #
+![](https://api.travis-ci.org/Lian-D/Summary.JS.svg?branch=master) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-For this project, I was the lead programmer who was responsible for programming the various capabilities of the mouse.  I started by programming the basics, such as sensor polling and motor actuation using interrupts.  From there, I then programmed the basic PD controls for the motors of the mouse.  The PD control the drive so that the mouse would stay centered while traversing the maze and keep the mouse driving straight.  I also programmed basic algorithms used to solve the maze such as a right wall hugger and a left wall hugger algorithm.  From there I worked on a flood-fill algorithm to help the mouse track where it is in the maze, and to map the route it takes.  We finished with the fastest mouse who finished the maze within our college.
 
-Here is some code that illustrates how we read values from the line sensors:
+A lightweight paragraph summarizer library which can be manipulated to preferred specifications. Utilizing the lex rank algorithm to score sentences. Not as effective as using TensorFlow and NLM but provides a nice middle ground.
 
+Total file size < 10 kb
+
+- [Demo](https://lian-d.github.io/Summary.js/)
+
+
+### Main
+
+ ```text
+dist/
+├── summary.js        (UMD)
+├── summary_minfied.js    (UMD, compressed)
+├── summary_legacy.js s (Old legacy summarizer)
+└── summary_legacy_minfied.js    (Old legacy summarizer, compressed)
+├── summary_node.js        (Node.js module)
+```
+### Installation
+Include files:
+
+```html
+<script src="/path/to/summary.js"></script>
+
+```
+### Usage
 ```js
-byte ADCRead(byte ch)
+summarize(text, sentences, keywordsInt);
+```
+where text is the input text
+
+sentences is the number of sentences you want to return
+
+keywordsInt is the number of keywords you want to factor in during the scoring process
+
+This will return an object:
+```js
 {
-    word value;
-    ADC1SC1 = ch;
-    while (ADC1SC1_COCO != 1)
-    {   // wait until ADC conversion is completed   
-    }
-    return ADC1RL;  // lower 8-bit value out of 10-bit data from the ADC
+keywords: an array of keywords,
+text: the raw string summary
+characterSummed: the number or words in this summary
+characterOrig: the number of words in the original summary
+reductionfactor: the % reduction factor
 }
 ```
+### How does it work?
+The core algorithm works in a couple of steps
+1. Calculate the occurrence of each word in the text.
+2. Detect which periods represent the end of a sentence. (e.g "Dr." does not).
+3. Split up the text into individual sentences.
+4. Rank sentences by the sum of their words' points and keyword points.
+5. Return X of the most highly ranked sentences in chronological order.
 
-You can learn more at the [UH Micromouse Website](http://www-ee.eng.hawaii.edu/~mmouse/about.html).
+### Contributing
 
-
+Please read through our [contributing guidelines](CONTRIBUTING.md).
 
