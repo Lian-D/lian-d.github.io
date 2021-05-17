@@ -5,7 +5,7 @@ image: images/SummaryJS.png
 title: Summary.JS
 permalink: projects/SummaryJS
 # All dates must be YYYY-MM-DD format!
-date: 2015-07-01
+date: 2019-01-01
 labels:
   - RAKE
   - LEXRANK
