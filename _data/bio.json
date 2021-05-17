@@ -78,81 +78,89 @@
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
-      "studyType": "B.S.",
-      "startDate": "2013-09-01",
+      "institution": "University of British Columbia, Vancouver, BC, Canada",
+      "area": "Computer Science (expected Spring, 2022)",
+      "studyType": "B.Sc.",
+      "startDate": "2017-09-01",
       "endDate": "Present",
-      "gpa": "",
+      "gpa": "74.1% (B) - 3rd Year Average: 80.5%",
       "courses": [
       ]
     }
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
-      "website": "",
-      "startDate": "2015-08-01",
-      "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "company": "Form Swim (formerly Form Athletica)",
+      "position": "Web Software Developer Co-op",
+      "website": "https://www.formswim.com/",
+      "startDate": "2020-05-01",
+      "endDate": "2020-09-01",
+      "summary": "Coop Web Software Developer",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
+        "Developed, updated and maintained back-end REST API routes utilized by the mobile app for10,000+ active users using Type-Script, MySQL and AWS services.",
+        "Improved back-end endpoints to allow for featured and verified professional user badges while adding integration and unit tests to the CI/CD pipeline ensuring no code debt is added",
+        "Introduced an extra layer of security for firmware versions by having Lambda functions trigger staff emails when firmware production flags are set to true via the back-end using AWS Lambda and AWS SES"
       ]
     },
     {
-      "company": "UH Information Technology Services",
-      "position": "Help Desk Consultant",
-      "website": "http://www.hawaii.edu/its/",
-      "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
-      "summary": "",
+      "company": "LedgerDocs",
+      "position": "Web Applications Developer",
+      "website": "https://www.ledgerdocs.com/",
+      "startDate": "2019-09-01",
+      "endDate": "2020-04-29",
+      "summary": "Developer of LedgerDoc's OCR module",
       "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
+        "Implemented a Database Job Queue system which resolved critical issues regarding high CPU consumption during peak processing hours, massively reducing server crashing occurrences by 100%",
+        "Revitalized platform by designing the front and back-end of anOptical Character Recognition(OCR) system using Google Tesseract responsible for processing 30,000+ user documents per annual quarter",
+        "Proposed and prototyped a Twilio Client and REST API that allows for communication with the web platform through SMS textusing Node.JS with Ngrok.io, Express.JS and Twilio NPM Modules"
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
-      "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
+      "organization": "513 Hornet Squadron Cadets Canada",
+      "website": "https://513aircadets.ca/",
+      "position": "Flight Sergeant & Senior Cadet Instructor",
+      "startDate": "2012-09-01",
+      "endDate": "2017-09-01",
+      "summary": "Cadet Instructor and Flight Commander of Hurricane Flight",
       "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
+        "Managed a flight of approximately 30 cadets, ensuring attendance, uniform standards and general standards were met",
+        "Taught leadership and marksmanship classes",
+        "Assisted Officers in running activities and parades"
       ]
     },
     {
-      "organization": "",
+      "organization": "Burnaby Mountain Secondary Music Department",
       "website": "",
-      "position": "Professional organization involvement",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
+      "position": "Vice President",
+      "startDate": "2016-09-01",
+      "endDate": "2017-06-01",
+      "summary": "Vice President of the Music Department",
       "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
+        "Managed and catalyzed brainstorming, planning and running of events within the music department to promote the student experience",
+        "Oversaw and managed the set-up, take-down and intermission of concerts"
+      ]
+    },
+    {
+      "organization": "Burquitlam Lions Care Centre",
+      "website": "",
+      "position": "Recreational Volunteer",
+      "startDate": "2015-04-01",
+      "endDate": "2016-07-01",
+      "summary": "Recreational Volunteer",
+      "highlights": [
+        "Assisted nursing staff in providing companionship and giving aid to residents in the care home",
+        "Provided visits in addition to conversing with residents"
       ]
     }
   ],
   "awards": [
     {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
+      "title": "British Columbia Government BC Achievement Scholarship",
+      "date": "2017",
       "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
-    },
-    {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
+      "summary": "BC Achievement Scholarships recognize the top 8,000 graduates in the province."
     }
   ],
   "references": [
