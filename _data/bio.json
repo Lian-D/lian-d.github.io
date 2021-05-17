@@ -53,7 +53,7 @@
   ],
   "skills": [
     {
-      "name": "Languages and Frameworks",
+      "name": "Languages",
       "level": "",
       "keywords": [
         "TypeScript",
@@ -65,14 +65,29 @@
       ]
     },
     {
+      "name": "Frameworks",
+      "level": "",
+      "keywords": [
+        "ExpressJS",
+        "NodeJS",
+        "VueJS",
+        "Sequelize",
+        "OAuth2.0",
+        "CodeIgniter",
+        "JQuery"
+      ]
+    },
+    {
       "name": "Toolsets/OS",
       "level": "",
       "keywords": [
         "MacOS",
         "Ubuntu",
         "Git/GitHub",
-        "g++",
-        "TI LaunchPad"
+        "Jenkins",
+        "Heroku",
+        "AWS SES",
+        "CentOS"
       ]
     }
   ],
