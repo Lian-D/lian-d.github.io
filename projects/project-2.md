@@ -2,8 +2,8 @@
 layout: project
 type: project
 image: images/Aqueduct.png
-title: Vacay
-permalink: projects/vacay
+title: Aqueduct
+permalink: projects/Aqueduct
 # All dates must be YYYY-MM-DD format!
 date: 2015-12-15
 labels:
