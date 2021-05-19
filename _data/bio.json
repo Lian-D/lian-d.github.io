@@ -126,8 +126,8 @@
       "summary": "Developer of LedgerDoc's OCR module",
       "highlights": [
         "Implemented a Database Job Queue system which resolved critical issues regarding high CPU consumption during peak processing hours, massively reducing server crashing occurrences by 100%",
-        "Revitalized platform by designing the front and back-end of anOptical Character Recognition(OCR) system using Google Tesseract responsible for processing 30,000+ user documents per annual quarter",
-        "Proposed and prototyped a Twilio Client and REST API that allows for communication with the web platform through SMS textusing Node.JS with Ngrok.io, Express.JS and Twilio NPM Modules"
+        "Revitalized platform by designing the front and back-end of an Optical Character Recognition(OCR) system using Google Tesseract responsible for processing 30,000+ user documents per annual quarter",
+        "Proposed and prototyped a Twilio Client and REST API that allows for communication with the web platform through SMS text using Node.JS with Ngrok.io, Express.JS and Twilio NPM Modules"
       ]
     }
   ],
