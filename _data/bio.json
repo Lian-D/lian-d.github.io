@@ -57,6 +57,7 @@
       "level": "",
       "keywords": [
         "TypeScript",
+        "Python",
         "JavaScript",
         "Java",
         "PHP",
@@ -94,7 +95,7 @@
   "education": [
     {
       "institution": "University of British Columbia, Vancouver, BC, Canada",
-      "area": "Computer Science (expected Spring, 2022)",
+      "area": "Computer Science (expected Spring, 2023)",
       "studyType": "B.Sc.",
       "startDate": "2017-09-01",
       "endDate": "Present",
@@ -105,6 +106,19 @@
   ],
   "work": [
     {
+      "company": "SAP",
+      "position": "Agile Developer (Infrastructure) Intern",
+      "website": "https://www.formswim.com/",
+      "startDate": "2021-09-01",
+      "endDate": "2022-04-30",
+      "summary": "Infrastructure Developer Intern",
+      "highlights": [
+        "Enabled broad overview of micro-service deployment statuses by implementing a deployment dashboard, allowing for rapid response of team members to failing deployments by cutting search times by up to 75%.",
+        "Worked on automatation for verification and whitelisting of valid API requests for SAP HANA's Data Collection Service, responsible for ingesting and aggregating data within SAP microservices.",
+        "Updated, maintained and deployed micro-services belonging to the SAP S4/HANA Enterprise Resource Planning (ERP) suite utilized by over 7,500 companies globally to provide real time analytics for their data."
+      ]
+    },
+    {
       "company": "Form Swim (formerly Form Athletica)",
       "position": "Web Software Developer Co-op",
       "website": "https://www.formswim.com/",
@@ -112,9 +126,9 @@
       "endDate": "2020-09-01",
       "summary": "Coop Web Software Developer",
       "highlights": [
-        "Developed, updated and maintained back-end REST API routes utilized by the mobile app for10,000+ active users using Type-Script, MySQL and AWS services.",
-        "Improved back-end endpoints to allow for featured and verified professional user badges while adding integration and unit tests to the CI/CD pipeline ensuring no code debt is added",
-        "Introduced an extra layer of security for firmware versions by having Lambda functions trigger staff emails when firmware production flags are set to true via the back-end using AWS Lambda and AWS SES"
+        "Developed, updated and maintained back-end REST API routes utilized by the mobile app for 45,000+ active swimmers using TypeScript, MySQL and AWS services.",
+        "Implemented database, back-end, and API support for ``Verified'' and ``Professional'' displayable user badges showcased in the mobile app using Express and Sequelize.",
+        "Set up staff alerts on production firmware releases, increasing automation release coverage by 66% by using AWS Lambda functions with delivery through AWS SES"
       ]
     },
     {
@@ -125,8 +139,8 @@
       "endDate": "2020-04-29",
       "summary": "Developer of LedgerDoc's OCR module",
       "highlights": [
-        "Implemented a Database Job Queue system which resolved critical issues regarding high CPU consumption during peak processing hours, massively reducing server crashing occurrences by 100%",
-        "Revitalized platform by designing the front and back-end of an Optical Character Recognition(OCR) system using Google Tesseract responsible for processing 30,000+ user documents per annual quarter",
+        "Reduced the load on server instances by up to 99.7% and eliminated server crashing occurrences by implementing a job queue system to distribute high CPU consumption during peak processing hours.",
+        "Implemented an Optical Character Recognition (OCR) system responsible for the reading, processing, and parsing of 30,000+ photographic invoices per annual quarter by including Tesseract onto the existing codebase.",
         "Proposed and prototyped a Twilio Client and REST API that allows for communication with the web platform through SMS text using Node.JS with Ngrok.io, Express.JS and Twilio NPM Modules"
       ]
     }
