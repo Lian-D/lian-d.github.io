@@ -6,7 +6,7 @@
     "email": "liand@student.ubc.ca",
     "phone": "778-709-9416",
     "website": "https://liand.dev/",
-    "summary": "🧠 Problem Solver, 🍜 Food Eater, ⛰ Hiker and 📸 Hobbyist Photographer. \n          Previously at 🏊 Form Swim, 📝LedgerDocs and 📊SAP",
+    "summary": "🧠Problem Solver, ⛰Hiker and 📸Photographer. \n          Previously: 🏊 Form Swim, 📝LedgerDocs and 📊SAP",
     "location": {
       "address": "",
       "postalCode": "",
@@ -101,13 +101,27 @@
       "area": "Computer Science (expected Spring, 2023)",
       "studyType": "B.Sc.",
       "startDate": "2017-09-01",
-      "endDate": "Present",
+      "endDate": "2023-04-30",
       "gpa": "74.1% (B) - 3rd Year Average: 80.5%",
       "courses": [
       ]
     }
   ],
   "work": [
+    {
+      "company": "Brock Solutions",
+      "position": "Agile Developer (Infrastructure) Intern",
+      "website": "https://www.sap.com/canada/index.html",
+      "startDate": "2023-07-01",
+      "endDate": "Present",
+      "summary": "Software Development Engineer",
+      "highlights": [
+        "Designed and developed an internal remote tooling solution in C# and ASP.net, allowing for team-based collaboration and debugging on emulated baggage systems, significantly cutting down licensing fees by up to $40,000 USD annually.",
+        "Provided software customizations to JFK airport; implementing a digital baggage tracking map responsible for tracking and visualization of terminal 4 and 6 baggage systems through C#, SQL and python as part of a $25 million USD contract.",
+        "Presented micro-service functionality and features to the upper level management of JFK International Airport.",
+        "Developed new baggage tracking and handling system for Domestic and Transborder terminals of Vancouver International airport. Specifically handling the configuration, customization and integration testing of variouscore microservices."
+      ]
+    },
     {
       "company": "SAP",
       "position": "Agile Developer (Infrastructure) Intern",
@@ -116,9 +130,9 @@
       "endDate": "2022-04-30",
       "summary": "Infrastructure Developer Intern",
       "highlights": [
-        "Enabled broad overview of micro-service deployment statuses by implementing a deployment dashboard, allowing for rapid response of team members to failing deployments by cutting search times by up to 75%.",
-        "Worked on automatation for verification and whitelisting of valid API requests for SAP HANA's Data Collection Service, responsible for ingesting and aggregating data within SAP microservices.",
-        "Updated, maintained and deployed micro-services belonging to the SAP S4/HANA Enterprise Resource Planning (ERP) suite utilized by over 7,500 companies globally to provide real time analytics for their data."
+        "Updated, maintained and deployed micro-services belonging to the SAP S4/HANA Enterprise Resource Planning (ERP) suite utilized by over 17,500 companies globally to provide real time analytics for their data. Specifically on the XSN Team using JavaScript and later TypeScript.",
+        "Issued patches for critical security issues in HANA related microservices ontop of refactoring non-standard API patterns and code defects through Java (Java Spring) and JavaScript (Node.JS).",
+        "Centralized micro-service deployment statuses for team by implementing a deployment dashboard, streamlining and allowing for rapid remediation to failing deployments."
       ]
     },
     {
@@ -130,8 +144,8 @@
       "summary": "Coop Web Software Developer",
       "highlights": [
         "Developed, updated and maintained back-end REST API routes utilized by the mobile app for 45,000+ active swimmers using TypeScript, MySQL and AWS services.",
-        "Implemented database, back-end, and API support for ``Verified'' and ``Professional'' displayable user badges showcased in the mobile app using Express and Sequelize.",
-        "Set up staff alerts on production firmware releases, increasing automation release coverage by 66% by using AWS Lambda functions with delivery through AWS SES"
+        "Implemented end-to-end (database, backend and API) support for “Verified” and “Professional” displayable user badges in the mobile app using Express.JS, TypeScript and Sequelize(SQL).",
+        "Set up staff email alerts on production firmware releases, flagging and alerting engineers of unintended releases by using AWS Lambda functions with delivery through AWS SES; increasing overall response readiness."
       ]
     },
     {
@@ -142,9 +156,9 @@
       "endDate": "2020-04-29",
       "summary": "Developer of LedgerDoc's OCR module",
       "highlights": [
-        "Reduced the load on server instances by up to 99.7% and eliminated server crashing occurrences by implementing a job queue system to distribute high CPU consumption during peak processing hours.",
-        "Implemented an Optical Character Recognition (OCR) system responsible for the reading, processing, and parsing of 30,000+ photographic invoices per annual quarter by including Tesseract onto the existing codebase.",
-        "Proposed and prototyped a Twilio Client and REST API that allows for communication with the web platform through SMS text using Node.JS with Ngrok.io, Express.JS and Twilio NPM Modules"
+        "Reduced the job-based load on server instance CPUs by up to 99.7% and eliminated server crashing occurrences by implementing a queue worker system to distribute high CPU consumption during peak processing hours.",
+        "Implemented an Optical Character Recognition (OCR) system responsible for the reading, processing, and parsing of 30,000+ photographic invoices per annual quarter by integrating Tesseract library onto the existing PHP codebase.",
+        "Prototyped user SMS document uploading to the web application using a Twilio client and REST API built onto existing backend infrastructure."
       ]
     }
   ],
