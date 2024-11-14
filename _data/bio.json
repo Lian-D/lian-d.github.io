@@ -58,6 +58,7 @@
       "keywords": [
         "TypeScript",
         "Python",
+        "C#",
         "JavaScript",
         "Java",
         "PHP",
@@ -72,6 +73,7 @@
         "ExpressJS",
         "NodeJS",
         "VueJS",
+        "ASP.NET",
         "Sequelize",
         "OAuth2.0",
         "CodeIgniter",
@@ -87,7 +89,8 @@
         "Git/GitHub",
         "Jenkins",
         "Heroku",
-        "AWS SES",
+        "AWS",
+        "Azure",
         "CentOS"
       ]
     }
