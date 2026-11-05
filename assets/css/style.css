@@ -414,7 +414,7 @@ a.project:hover { transform: translateY(-4px); box-shadow: var(--glass-shadow), 
 .featured:hover .f-shot { transform: none; }
 .f-shot img { width: 100%; height: auto; }
 
-.mini-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 18px; }
+.mini-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 18px; }
 .mini {
   display: flex; flex-direction: column; gap: 2px;
   padding: 16px 18px; border-radius: var(--radius-sm); text-decoration: none;
@@ -507,6 +507,7 @@ a.project:hover { transform: translateY(-4px); box-shadow: var(--glass-shadow), 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .project-grid { grid-template-columns: repeat(2, 1fr); }
+  .mini-grid { grid-template-columns: repeat(2, 1fr); }
   .featured { grid-template-columns: 1fr; }
   .f-shot { order: -1; transform: none; }
   .skills-grid, .bg-grid { grid-template-columns: 1fr; }
