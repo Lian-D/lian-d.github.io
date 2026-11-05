@@ -1,5 +1,364 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lian Duan — Fullstack Developer</title>
+  <meta name="description" content="Lian Duan is a software developer in Vancouver, BC, building event-driven back ends, high-availability systems and React front ends.">
+  <meta name="theme-color" content="#0b0f1a">
+  <meta property="og:title" content="Lian Duan — Fullstack Developer">
+  <meta property="og:description" content="Fullstack developer: payments, airport systems, React and .NET. Based in Vancouver, BC.">
+  <meta property="og:url" content="https://liand.dev/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/38368802?v=4">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="blob b4"></span>
+    <span class="grain"></span>
+  </div>
 
-{% include {{ site.theme-home }} %}
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav-wrap">
+    <nav class="nav glass" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Lian Duan, home">LD</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Toggle colour theme">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-card glass glow reveal">
+        <div class="avatar-ring">
+          <img class="avatar" src="https://avatars.githubusercontent.com/u/38368802?v=4" alt="Portrait of Lian Duan" width="132" height="132">
+        </div>
+        <div class="hero-text">
+          <p class="eyebrow"><span class="dot"></span>Fullstack Developer · Vancouver, BC</p>
+          <h1>Hi, I'm <span class="grad">Lian Duan</span>.</h1>
+          <p class="lede">I build dependable systems end to end: event-driven payment services, high-availability airport tracking, and the React front ends on top. Outside of work I hike and take photos.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="resume/Lian_Resume-2026.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+              Resume
+            </a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+          <ul class="socials" aria-label="Social profiles">
+            <li><a href="https://github.com/Lian-D" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+            </a></li>
+            <li><a href="https://linkedin.com/in/LianDu" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            </a></li>
+            <li><a href="https://instagram.com/lian_duan_" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" class="fill"/></svg>
+            </a></li>
+            <li><a href="mailto:Lian-Duan@Outlook.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat glass"><strong>$400K+</strong><span>monthly revenue recovered</span></div>
+        <div class="stat glass"><strong>Millions</strong><span>of daily airport transactions</span></div>
+        <div class="stat glass"><strong>15k+</strong><span>members on platforms I built</span></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <p class="kicker">01 — About</p>
+        <h2>Full-stack by trade, curious by default.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="glass card reveal">
+          <p>I studied Computer Science (with Co-op) at the University of British Columbia, and since then I've worked in real estate, airport logistics, enterprise SaaS, sports tech and fintech. I care most about sturdy systems: event-driven services that recover on their own, monitoring that turns hours of debugging into minutes, and APIs that are pleasant to build on.</p>
+          <p>Right now I'm an <strong>Intermediate Fullstack Developer at the Real Estate Board of Greater Vancouver</strong>, working on payment processing, search and the member self-service platform. Before that I spent two years at <strong>Brock Solutions</strong> building high-availability baggage tracking for JFK and YVR.</p>
+        </div>
+        <div class="glass card reveal">
+          <h3 class="card-title">Focus areas</h3>
+          <ul class="focus">
+            <li><span class="ico">⚡</span><div><b>Event-driven back ends</b><small>Azure Event Bus, Functions, Redis</small></div></li>
+            <li><span class="ico">🧩</span><div><b>High-availability systems</b><small>Failover clustering, airport scale</small></div></li>
+            <li><span class="ico">🖥️</span><div><b>Full-stack products</b><small>React, Next.js, search, dashboards</small></div></li>
+            <li><span class="ico">🛡️</span><div><b>Secure payments</b><small>PCI compliance, audit logging, monitoring</small></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="section-head reveal">
+        <p class="kicker">02 — Experience</p>
+        <h2>Where I've worked.</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="glass card job reveal">
+          <div class="job-head">
+            <div>
+              <h3>Intermediate Fullstack Developer <span class="at">@ Real Estate Board of Greater Vancouver</span></h3>
+              <p class="meta">Jun 2025 — Present · Vancouver, BC</p>
+            </div>
+            <span class="pill now">Current</span>
+          </div>
+          <ul class="bullets">
+            <li>Cut payment failures by <b>88%</b>, recovering over <b>$400K in monthly revenue</b>, by building a scalable account updater service. It asynchronously propagates thousands of PCI-compliant payment entries from JPMorgan Chase through internal systems using Azure Event Bus, Redis, Azure Functions and key-value stores.</li>
+            <li>Added an audit logging table, internal error-notification emails and Azure Log Analytics monitoring for payment workflows, so diagnosing payment issues now takes <b>minutes instead of hours</b>.</li>
+            <li>Architected end-to-end systems for a member self-service platform serving <b>15,000+ users</b>, covering profile management, data-driven dashboards and subscriptions, while mentoring junior developers.</li>
+            <li>Built full-stack search connecting Sanity.io CMS to Azure AI Search, with serverless indexing functions and a React/Next.js front end, so users can instantly find content across <b>45,000+ entries</b>.</li>
+            <li>Wrote onboarding docs covering environment setup, dependencies and back-end best practices, which shortened ramp-up time for new developers.</li>
+          </ul>
+          <div class="tags"><span>C#</span><span>Next.js</span><span>React</span><span>Redis</span><span>Azure Event Bus</span><span>Azure Functions</span><span>Azure DevOps</span></div>
+        </li>
+
+        <li class="glass card job reveal">
+          <div class="job-head">
+            <div>
+              <h3>Software Development Engineer <span class="at">@ Brock Solutions</span></h3>
+              <p class="meta">Jul 2023 — Jun 2025 · Richmond, BC</p>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Led development of internal emulation tooling in C#, ASP.NET and WinForms that replaced third-party software, saving <b>$40K USD a year</b> in licensing and enabling multi-user, cross-team debugging of baggage systems.</li>
+            <li>Built high-availability distributed tracking systems handling <b>millions of daily transactions</b> for JFK and YVR International Airports with SQL Server, C#, ASP.NET Core and Windows Server failover clustering.</li>
+            <li>Built a real-time, event-based baggage tracking map with replay, letting operators correct and audit <b>4,000+ bag misroutes a day</b> and significantly reducing lost luggage.</li>
+            <li>Presented microservice features and functionality to senior management at JFK International Airport.</li>
+          </ul>
+          <div class="tags"><span>C#</span><span>ASP.NET Core</span><span>React</span><span>SQL Server</span><span>Windows Server</span></div>
+        </li>
+
+        <li class="glass card job reveal">
+          <div class="job-head">
+            <div>
+              <h3>Agile Developer Intern <span class="at">@ SAP (HANA &amp; Analytics)</span></h3>
+              <p class="meta">Sep 2021 — Apr 2022 · Vancouver, BC</p>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Patched CVEs, refactored non-standard API patterns, fixed code defects and raised code coverage to <b>95%</b> in HANA-related microservices.</li>
+            <li>Maintained and deployed microservices in the SAP S/4HANA ERP suite, which more than <b>17,500 companies</b> use for real-time analytics.</li>
+            <li>Built a team deployment dashboard that put every microservice's deployment status in one place, improving the team's operational efficiency.</li>
+          </ul>
+          <div class="tags"><span>TypeScript</span><span>Node.js</span><span>Spring Boot</span><span>Express</span><span>Jenkins</span></div>
+        </li>
+
+        <li class="glass card job reveal">
+          <div class="job-head">
+            <div>
+              <h3>Web Software Developer Intern <span class="at">@ FORM</span></h3>
+              <p class="meta">Apr 2020 — Sep 2020 · Vancouver, BC</p>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Built and maintained the back-end REST API routes behind the mobile app, used by <b>45,000+ active swimmers</b>, with TypeScript, MySQL and AWS.</li>
+            <li>Shipped end-to-end support (database, back end and API) for "Verified" and "Professional" user badges using Express, TypeScript and Sequelize.</li>
+            <li>Set up staff email alerts for production firmware releases with AWS Lambda and SES, so engineers learned about unintended releases right away.</li>
+          </ul>
+          <div class="tags"><span>TypeScript</span><span>Node.js</span><span>Express</span><span>Vue</span><span>AWS</span><span>SQL</span></div>
+        </li>
+
+        <li class="glass card job reveal">
+          <div class="job-head">
+            <div>
+              <h3>Web Applications Developer Intern <span class="at">@ LedgerDocs</span></h3>
+              <p class="meta">Sep 2019 — Apr 2020 · North Vancouver, BC</p>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Designed and built an OCR system with Tesseract inside the existing PHP (CodeIgniter) codebase that reads and parses <b>30,000+ invoice photos</b> a quarter.</li>
+            <li>Built a queue worker system that spreads heavy processing during peak hours, cutting job load on servers by up to <b>99.7%</b> and ending CPU-overload crashes.</li>
+            <li>Prototyped document uploads over SMS with Twilio and a REST API built on the existing back end.</li>
+          </ul>
+          <div class="tags"><span>PHP</span><span>CodeIgniter</span><span>MySQL</span><span>Tesseract</span><span>Linux</span></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <p class="kicker">03 — Projects</p>
+        <h2>Things I've built.</h2>
+      </div>
+
+      <a class="glass card featured glow reveal" href="https://github.com/Lian-D/liftlog-next" target="_blank" rel="noopener">
+        <div class="f-body">
+          <p class="p-year"><span class="pill now">New</span> 2026 · Featured</p>
+          <h3>LiftLog</h3>
+          <p>A self-hosted lifting tracker. Build routines from a body map, log workouts set by set with reps already filled in, and chart estimated one-rep maxes over time. Cardio and sports are logged too.</p>
+          <ul class="f-points">
+            <li>Multi-user accounts with scrypt-hashed passwords, rate-limited sign-in and admin user management</li>
+            <li>Lock-screen rest-timer alerts delivered by Web Push when the app isn't on screen</li>
+            <li>Ships as a small standalone Docker image running as a non-root user, with SQLite and a health check</li>
+          </ul>
+          <div class="tags"><span>Next.js</span><span>TypeScript</span><span>SQLite</span><span>Web Push</span><span>Docker</span></div>
+        </div>
+        <div class="f-shot">
+          <img src="images/liftlog.webp" alt="LiftLog's Progress page: a year heatmap of workouts and an estimated one-rep-max chart" loading="lazy" width="1200" height="806">
+        </div>
+      </a>
+
+      <div class="project-grid">
+        <div class="glass card project reveal">
+          <a class="thumb cover" href="https://liand.dev/SafeCracker/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="images/safecracker.webp" alt="" loading="lazy" width="800" height="450"></a>
+          <div class="p-body">
+            <p class="p-year">2023 · UBC CPSC 447</p>
+            <h3>SafeCracker</h3>
+            <p>An interactive D3 visualization of NordVPN's top 200 passwords in each country. A choropleth map shows each country's average time to crack, and linked charts plot each password's crack time against how many people use it.</p>
+            <div class="tags"><span>JavaScript</span><span>D3.js</span><span>Data Viz</span></div>
+            <div class="p-links">
+              <a href="https://liand.dev/SafeCracker/" target="_blank" rel="noopener">Live demo ↗</a>
+              <a href="https://github.com/Lian-D/SafeCracker" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <a class="glass card project reveal" href="https://github.com/Lian-D/PyeadCrab" target="_blank" rel="noopener">
+          <div class="thumb"><img src="images/pyeadCrab.png" alt="" loading="lazy"></div>
+          <div class="p-body">
+            <p class="p-year">2022</p>
+            <h3>PyeadCrab</h3>
+            <p>A Python CLI for static and dynamic code analysis. It processes the AST to find code clusters, uses Markov models to predict call likelihood, and draws the structure as D3 graphs.</p>
+            <div class="tags"><span>Python</span><span>AST</span><span>ANTLR</span><span>D3</span><span>React</span></div>
+          </div>
+        </a>
+
+        <a class="glass card project reveal" href="https://github.com/Lian-D/Walmart-Mario-Maker" target="_blank" rel="noopener">
+          <div class="thumb"><img src="images/Walmariomaker.png" alt="" loading="lazy"></div>
+          <div class="p-body">
+            <p class="p-year">2022</p>
+            <h3>Walmart Mario Maker</h3>
+            <p>A domain-specific language for writing 2D platformer levels, with enemies, doors, coins and conditional events, played in the browser.</p>
+            <div class="tags"><span>TypeScript</span><span>DSL</span><span>React</span></div>
+          </div>
+        </a>
+
+        <a class="glass card project reveal" href="https://github.com/Lian-D/Summary.js" target="_blank" rel="noopener">
+          <div class="thumb"><img src="images/SummaryJS.png" alt="" loading="lazy"></div>
+          <div class="p-body">
+            <p class="p-year">2019</p>
+            <h3>Summary.js</h3>
+            <p>A paragraph summarizer under 10 KB for the browser and Node. It scores sentences with LexRank and RAKE keywords.</p>
+            <div class="tags"><span>JavaScript</span><span>NLP</span><span>Node</span></div>
+          </div>
+        </a>
+
+        <div class="glass card project reveal">
+          <div class="thumb"><img src="images/Aqueduct.png" alt="" loading="lazy"></div>
+          <div class="p-body">
+            <p class="p-year">nwHacks 2020</p>
+            <h3>Aqueduct</h3>
+            <p>An SMS chatbot that brings web content to feature phones in places with little or no internet access.</p>
+            <div class="tags"><span>JavaScript</span><span>Twilio</span><span>MongoDB</span></div>
+          </div>
+        </div>
+
+        <a class="glass card project reveal" href="https://github.com/Lian-D/Amadeus-Voice-Assistant" target="_blank" rel="noopener">
+          <div class="thumb"><img src="images/Amadeus.png" alt="" loading="lazy"></div>
+          <div class="p-body">
+            <p class="p-year">2018</p>
+            <h3>Amadeus</h3>
+            <p>A prototype voice assistant built on IBM Watson speech-to-text, with weather, Wikipedia and small-talk commands.</p>
+            <div class="tags"><span>Java</span><span>IBM Watson</span><span>APIs</span></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="mini-grid">
+        <a class="glass mini reveal" href="https://github.com/Lian-D/Unipass" target="_blank" rel="noopener"><b>Unipass</b><span>Local encrypted password manager · Java</span></a>
+        <a class="glass mini reveal" href="https://github.com/Lian-D/Travel-Dashboard" target="_blank" rel="noopener"><b>Travel Dashboard</b><span>Personal travel visualization · D3</span></a>
+        <a class="glass mini reveal" href="https://github.com/Lian-D/SageBot.js" target="_blank" rel="noopener"><b>SageBot</b><span>Discord bot boilerplate · Node.js</span></a>
+      </div>
+    </section>
+
+    <!-- SKILLS + EDUCATION -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <p class="kicker">04 — Toolkit</p>
+        <h2>Skills &amp; background.</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="glass card reveal">
+          <h3 class="card-title">Languages</h3>
+          <div class="chips"><span>C#</span><span>TypeScript</span><span>SQL</span><span>Java</span><span>JavaScript</span><span>Python</span><span>PHP</span></div>
+        </div>
+        <div class="glass card reveal">
+          <h3 class="card-title">Frameworks &amp; Libraries</h3>
+          <div class="chips"><span>.NET / ASP.NET Core</span><span>React</span><span>Next.js</span><span>Node.js</span><span>Express</span><span>Java Spring</span><span>D3.js</span><span>Serverless Functions</span></div>
+        </div>
+        <div class="glass card reveal">
+          <h3 class="card-title">Tools &amp; Platforms</h3>
+          <div class="chips"><span>Azure</span><span>Azure DevOps</span><span>Redis</span><span>SQL Server</span><span>MySQL</span><span>Sanity.io</span><span>SendGrid</span><span>Docker</span><span>Git</span><span>Jenkins</span><span>Jira</span><span>Linux / WSL</span></div>
+        </div>
+      </div>
+
+      <div class="bg-grid">
+        <div class="glass card reveal">
+          <p class="kicker small">Education</p>
+          <h3>B.Sc. Computer Science, Co-op</h3>
+          <p class="meta">University of British Columbia · Sep 2017 — Jun 2023 · GPA 3.7 / 4.33</p>
+        </div>
+        <div class="glass card reveal">
+          <p class="kicker small">Award</p>
+          <h3>BC Achievement Scholarship</h3>
+          <p class="meta">Government of British Columbia · 2017, given to the province's top 8,000 graduates</p>
+        </div>
+        <div class="glass card reveal">
+          <p class="kicker small">Leadership</p>
+          <h3>Flight Sergeant &amp; Senior Instructor</h3>
+          <p class="meta">513 Hornet Squadron Air Cadets · 2012 — 2017, led a flight of about 30 cadets</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="glass contact glow reveal">
+        <p class="kicker">05 — Contact</p>
+        <h2>Let's build something.</h2>
+        <p class="lede">I'm happy to hear about engineering work, interesting problems, or good hiking trails near Vancouver.</p>
+        <div class="cta-row center">
+          <a class="btn primary" href="mailto:Lian-Duan@Outlook.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
+            Say hello
+          </a>
+          <a class="btn" href="https://linkedin.com/in/LianDu" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/Lian-D" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Lian Duan · Made in Vancouver</p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
