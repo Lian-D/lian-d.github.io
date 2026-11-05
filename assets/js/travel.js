@@ -3,15 +3,24 @@
   var el = document.getElementById('travel-map');
   if (!el || !window.L) return;
 
-  var root = document.documentElement;
-  var media = window.matchMedia('(prefers-color-scheme: light)');
-  function theme() { return root.dataset.theme || (media.matches ? 'light' : 'dark'); }
+  // One world-width (360 degrees) centred on the Pacific, matching lng() below.
+  // Panning stops at these edges, so the view never drifts onto a repeated copy
+  // of the world where no pins are drawn.
+  var world = L.latLngBounds([-75, -30], [84, 330]);
 
   var map = L.map(el, {
     scrollWheelZoom: false,
     zoomSnap: 1,
-    minZoom: 1,
+    maxBounds: world,
+    maxBoundsViscosity: 1,
   }).setView([35, 200], 2);
+
+  // Never zoom out so far that the view is wider than one world.
+  function fitMinZoom() {
+    map.setMinZoom(Math.ceil(map.getBoundsZoom(world, true)));
+  }
+  fitMinZoom();
+  window.addEventListener('resize', fitMinZoom);
 
   // Only capture the scroll wheel after the visitor clicks into the map.
   map.on('click focus', function () { map.scrollWheelZoom.enable(); });
