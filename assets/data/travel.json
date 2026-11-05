@@ -1,0 +1,57 @@
+{
+  "home": { "name": "Vancouver", "country": "Canada", "lat": 49.2827, "lon": -123.1207 },
+  "places": [
+    { "name": "Fukuoka", "country": "Japan", "lat": 33.5904, "lon": 130.4017, "years": [2026] },
+    { "name": "Kitakyushu", "country": "Japan", "lat": 33.8835, "lon": 130.8752, "years": [2026] },
+    { "name": "Nagasaki", "country": "Japan", "lat": 32.7503, "lon": 129.8779, "years": [2026] },
+    { "name": "Kumamoto", "country": "Japan", "lat": 32.8032, "lon": 130.7079, "years": [2026] },
+    { "name": "Kurokawa Onsen", "country": "Japan", "lat": 33.0753, "lon": 131.1406, "years": [2026] },
+    { "name": "Kagoshima", "country": "Japan", "lat": 31.5966, "lon": 130.5571, "years": [2026] },
+    { "name": "Taipei", "country": "Taiwan", "lat": 25.0330, "lon": 121.5654, "years": [2026] },
+    { "name": "Tainan", "country": "Taiwan", "lat": 22.9999, "lon": 120.2270, "years": [2026] },
+    { "name": "Kaohsiung", "country": "Taiwan", "lat": 22.6273, "lon": 120.3014, "years": [2026] },
+
+    { "name": "Cancún", "country": "Mexico", "lat": 21.1619, "lon": -86.8515, "years": [2025] },
+    { "name": "Kitchener", "country": "Canada", "lat": 43.4516, "lon": -80.4925, "years": [2025] },
+
+    { "name": "Tokyo", "country": "Japan", "lat": 35.6762, "lon": 139.6503, "years": [2024] },
+    { "name": "Hakone", "country": "Japan", "lat": 35.2324, "lon": 139.1069, "years": [2024] },
+    { "name": "Kyoto", "country": "Japan", "lat": 35.0116, "lon": 135.7681, "years": [2024] },
+    { "name": "Osaka", "country": "Japan", "lat": 34.6937, "lon": 135.5023, "years": [2024] },
+    { "name": "Hiroshima", "country": "Japan", "lat": 34.3853, "lon": 132.4553, "years": [2024] },
+    { "name": "Beijing", "country": "China", "lat": 39.9042, "lon": 116.4074, "years": [2008, 2024] },
+    { "name": "Shanghai", "country": "China", "lat": 31.2304, "lon": 121.4737, "years": [2008, 2024] },
+    { "name": "Changsha", "country": "China", "lat": 28.2278, "lon": 112.9389, "years": [2008, 2018, 2024] },
+    { "name": "Zhangjiajie", "country": "China", "lat": 29.1167, "lon": 110.4784, "years": [2008, 2018, 2024] },
+
+    { "name": "Detroit", "country": "USA", "lat": 42.3314, "lon": -83.0458, "years": [2023] },
+    { "name": "Ann Arbor", "country": "USA", "lat": 42.2808, "lon": -83.7430, "years": [2023] },
+
+    { "name": "Honolulu", "country": "USA", "lat": 21.3099, "lon": -157.8581, "years": [2022] },
+
+    { "name": "Toronto", "country": "Canada", "lat": 43.6511, "lon": -79.3470, "years": [2018] },
+    { "name": "Montréal", "country": "Canada", "lat": 45.5019, "lon": -73.5674, "years": [2018] },
+    { "name": "Harbin", "country": "China", "lat": 45.7567, "lon": 126.6424, "years": [2018] },
+    { "name": "Xiamen", "country": "China", "lat": 24.4795, "lon": 118.0895, "years": [2018] },
+
+    { "name": "Seattle", "country": "USA", "lat": 47.6062, "lon": -122.3321, "years": [2017] },
+    { "name": "Portland", "country": "USA", "lat": 45.5152, "lon": -122.6784, "years": [2017] },
+    { "name": "San Francisco", "country": "USA", "lat": 37.7749, "lon": -122.4194, "years": [2017] },
+    { "name": "Los Angeles", "country": "USA", "lat": 34.0522, "lon": -118.2437, "years": [2017] },
+
+    { "name": "Ottawa", "country": "Canada", "lat": 45.4215, "lon": -75.6972, "years": [2016] },
+    { "name": "Spokane", "country": "USA", "lat": 47.6588, "lon": -117.4260, "years": [2015] },
+
+    { "name": "Kelowna", "country": "Canada", "lat": 49.8880, "lon": -119.4960, "years": [2014] },
+    { "name": "Penticton", "country": "Canada", "lat": 49.4991, "lon": -119.5937, "years": [2014] },
+    { "name": "Osoyoos", "country": "Canada", "lat": 49.0323, "lon": -119.4682, "years": [2014] },
+
+    { "name": "Victoria", "country": "Canada", "lat": 48.4284, "lon": -123.3656, "years": [2011] },
+    { "name": "Tofino", "country": "Canada", "lat": 49.1530, "lon": -125.9066, "years": [2011] },
+
+    { "name": "Hong Kong", "country": "China", "lat": 22.3193, "lon": 114.1694, "years": [2008] },
+
+    { "name": "Edmonton", "country": "Canada", "lat": 53.5461, "lon": -113.4937, "years": [2007] },
+    { "name": "Banff", "country": "Canada", "lat": 51.1784, "lon": -115.5708, "years": [2007] }
+  ]
+}

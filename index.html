@@ -14,19 +14,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <script>
     try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
 </head>
 <body>
-  <div class="backdrop" aria-hidden="true">
-    <span class="blob b1"></span>
-    <span class="blob b2"></span>
-    <span class="blob b3"></span>
-    <span class="blob b4"></span>
-    <span class="grain"></span>
-  </div>
+  <div class="backdrop" aria-hidden="true"></div>
 
   <a class="skip" href="#main">Skip to content</a>
 
@@ -37,6 +32,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#travel">Travel</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="theme-toggle" type="button" aria-label="Toggle colour theme">
@@ -82,9 +78,21 @@
       </div>
 
       <div class="stats reveal">
-        <div class="stat glass"><strong>$400K+</strong><span>monthly revenue recovered</span></div>
-        <div class="stat glass"><strong>Millions</strong><span>of daily airport transactions</span></div>
-        <div class="stat glass"><strong>15k+</strong><span>members on platforms I built</span></div>
+        <div class="stat glass">
+          <strong>$400K+ <em>/ month</em></strong>
+          <span>revenue recovered by cutting payment failures 88% with an event-driven account updater service</span>
+          <small>Real Estate Board of Greater Vancouver</small>
+        </div>
+        <div class="stat glass">
+          <strong>Millions <em>/ day</em></strong>
+          <span>baggage tracking transactions on high-availability systems at JFK and YVR International Airports</span>
+          <small>Brock Solutions</small>
+        </div>
+        <div class="stat glass">
+          <strong>15,000+ <em>members</em></strong>
+          <span>use the self-service platform I architected, with search across 45,000+ content entries</span>
+          <small>Real Estate Board of Greater Vancouver</small>
+        </div>
       </div>
     </section>
 
@@ -120,80 +128,116 @@
 
       <ol class="timeline">
         <li class="glass card job reveal">
-          <div class="job-head">
+          <header class="job-head">
+            <span class="logo" style="--c: #6366f1">RE</span>
             <div>
-              <h3>Intermediate Fullstack Developer <span class="at">@ Real Estate Board of Greater Vancouver</span></h3>
+              <h3>Real Estate Board of Greater Vancouver</h3>
+              <p class="role">Intermediate Fullstack Developer</p>
               <p class="meta">Jun 2025 — Present · Vancouver, BC</p>
             </div>
             <span class="pill now">Current</span>
+          </header>
+          <p class="job-summary">I work on payments, search and the member self-service platform for Greater Vancouver's realtor association, and I mentor junior developers.</p>
+          <div class="metrics">
+            <div class="metric"><b>88%</b><span>fewer payment failures</span></div>
+            <div class="metric"><b>$400K+</b><span>revenue recovered monthly</span></div>
+            <div class="metric"><b>15k+</b><span>members on the platform</span></div>
+            <div class="metric"><b>45k+</b><span>entries made searchable</span></div>
           </div>
-          <ul class="bullets">
-            <li>Cut payment failures by <b>88%</b>, recovering over <b>$400K in monthly revenue</b>, by building a scalable account updater service. It asynchronously propagates thousands of PCI-compliant payment entries from JPMorgan Chase through internal systems using Azure Event Bus, Redis, Azure Functions and key-value stores.</li>
-            <li>Added an audit logging table, internal error-notification emails and Azure Log Analytics monitoring for payment workflows, so diagnosing payment issues now takes <b>minutes instead of hours</b>.</li>
-            <li>Architected end-to-end systems for a member self-service platform serving <b>15,000+ users</b>, covering profile management, data-driven dashboards and subscriptions, while mentoring junior developers.</li>
-            <li>Built full-stack search connecting Sanity.io CMS to Azure AI Search, with serverless indexing functions and a React/Next.js front end, so users can instantly find content across <b>45,000+ entries</b>.</li>
-            <li>Wrote onboarding docs covering environment setup, dependencies and back-end best practices, which shortened ramp-up time for new developers.</li>
+          <ul class="highlights">
+            <li><b>Account updater service:</b> event-driven propagation of PCI-compliant card updates from JPMorgan Chase through internal systems, using Azure Event Bus, Redis and Azure Functions.</li>
+            <li><b>Payment observability:</b> audit logging, error alerts and Azure Log Analytics, so payment issues are diagnosed in minutes instead of hours.</li>
+            <li><b>Member platform:</b> profile management, data dashboards and subscriptions, architected end to end.</li>
+            <li><b>Content search:</b> Sanity.io CMS indexed into Azure AI Search by serverless functions, with a Next.js front end.</li>
+            <li><b>Onboarding docs:</b> environment setup and back-end best practices that shorten ramp-up for new developers.</li>
           </ul>
           <div class="tags"><span>C#</span><span>Next.js</span><span>React</span><span>Redis</span><span>Azure Event Bus</span><span>Azure Functions</span><span>Azure DevOps</span></div>
         </li>
 
         <li class="glass card job reveal">
-          <div class="job-head">
+          <header class="job-head">
+            <span class="logo" style="--c: #0ea5a4">BS</span>
             <div>
-              <h3>Software Development Engineer <span class="at">@ Brock Solutions</span></h3>
+              <h3>Brock Solutions</h3>
+              <p class="role">Software Development Engineer</p>
               <p class="meta">Jul 2023 — Jun 2025 · Richmond, BC</p>
             </div>
+          </header>
+          <p class="job-summary">Two years building the software that tracks and routes checked bags through JFK and Vancouver International Airports.</p>
+          <div class="metrics">
+            <div class="metric"><b>Millions</b><span>transactions a day</span></div>
+            <div class="metric"><b>4,000+</b><span>misroutes fixed daily</span></div>
+            <div class="metric"><b>$40K</b><span>licensing saved per year</span></div>
           </div>
-          <ul class="bullets">
-            <li>Led development of internal emulation tooling in C#, ASP.NET and WinForms that replaced third-party software, saving <b>$40K USD a year</b> in licensing and enabling multi-user, cross-team debugging of baggage systems.</li>
-            <li>Built high-availability distributed tracking systems handling <b>millions of daily transactions</b> for JFK and YVR International Airports with SQL Server, C#, ASP.NET Core and Windows Server failover clustering.</li>
-            <li>Built a real-time, event-based baggage tracking map with replay, letting operators correct and audit <b>4,000+ bag misroutes a day</b> and significantly reducing lost luggage.</li>
-            <li>Presented microservice features and functionality to senior management at JFK International Airport.</li>
+          <ul class="highlights">
+            <li><b>High-availability tracking:</b> distributed systems on SQL Server, ASP.NET Core and Windows Server failover clustering.</li>
+            <li><b>Live baggage map:</b> a real-time, event-based map with replay, so operators can correct and audit misrouted bags.</li>
+            <li><b>Emulation tooling:</b> replaced third-party software with multi-user debugging tools in C#, ASP.NET and WinForms.</li>
+            <li><b>Stakeholder demos:</b> presented microservice features to senior management at JFK International Airport.</li>
           </ul>
           <div class="tags"><span>C#</span><span>ASP.NET Core</span><span>React</span><span>SQL Server</span><span>Windows Server</span></div>
         </li>
 
         <li class="glass card job reveal">
-          <div class="job-head">
+          <header class="job-head">
+            <span class="logo" style="--c: #3b82f6">SAP</span>
             <div>
-              <h3>Agile Developer Intern <span class="at">@ SAP (HANA &amp; Analytics)</span></h3>
+              <h3>SAP</h3>
+              <p class="role">Agile Developer Intern · HANA &amp; Analytics</p>
               <p class="meta">Sep 2021 — Apr 2022 · Vancouver, BC</p>
             </div>
+          </header>
+          <p class="job-summary">Kept S/4HANA microservices secure and shippable on the infrastructure side.</p>
+          <div class="metrics">
+            <div class="metric"><b>95%</b><span>code coverage reached</span></div>
+            <div class="metric"><b>17.5k+</b><span>companies on S/4HANA</span></div>
           </div>
-          <ul class="bullets">
-            <li>Patched CVEs, refactored non-standard API patterns, fixed code defects and raised code coverage to <b>95%</b> in HANA-related microservices.</li>
-            <li>Maintained and deployed microservices in the SAP S/4HANA ERP suite, which more than <b>17,500 companies</b> use for real-time analytics.</li>
-            <li>Built a team deployment dashboard that put every microservice's deployment status in one place, improving the team's operational efficiency.</li>
+          <ul class="highlights">
+            <li><b>Security patches:</b> CVE fixes, API refactors and defect fixes across HANA microservices.</li>
+            <li><b>Deployment dashboard:</b> one view of every service's deployment status for the team.</li>
           </ul>
           <div class="tags"><span>TypeScript</span><span>Node.js</span><span>Spring Boot</span><span>Express</span><span>Jenkins</span></div>
         </li>
 
         <li class="glass card job reveal">
-          <div class="job-head">
+          <header class="job-head">
+            <span class="logo" style="--c: #db2777">F</span>
             <div>
-              <h3>Web Software Developer Intern <span class="at">@ FORM</span></h3>
+              <h3>FORM</h3>
+              <p class="role">Web Software Developer Intern</p>
               <p class="meta">Apr 2020 — Sep 2020 · Vancouver, BC</p>
             </div>
+          </header>
+          <p class="job-summary">Back-end developer for the smart swim goggles' companion app.</p>
+          <div class="metrics">
+            <div class="metric"><b>45k+</b><span>active swimmers served</span></div>
           </div>
-          <ul class="bullets">
-            <li>Built and maintained the back-end REST API routes behind the mobile app, used by <b>45,000+ active swimmers</b>, with TypeScript, MySQL and AWS.</li>
-            <li>Shipped end-to-end support (database, back end and API) for "Verified" and "Professional" user badges using Express, TypeScript and Sequelize.</li>
-            <li>Set up staff email alerts for production firmware releases with AWS Lambda and SES, so engineers learned about unintended releases right away.</li>
+          <ul class="highlights">
+            <li><b>Mobile app APIs:</b> REST routes built on TypeScript, MySQL and AWS.</li>
+            <li><b>User badges:</b> "Verified" and "Professional" badges end to end with Express and Sequelize.</li>
+            <li><b>Release alerts:</b> AWS Lambda and SES emails that flag unintended firmware releases.</li>
           </ul>
           <div class="tags"><span>TypeScript</span><span>Node.js</span><span>Express</span><span>Vue</span><span>AWS</span><span>SQL</span></div>
         </li>
 
         <li class="glass card job reveal">
-          <div class="job-head">
+          <header class="job-head">
+            <span class="logo" style="--c: #f59e0b">LD</span>
             <div>
-              <h3>Web Applications Developer Intern <span class="at">@ LedgerDocs</span></h3>
+              <h3>LedgerDocs</h3>
+              <p class="role">Web Applications Developer Intern</p>
               <p class="meta">Sep 2019 — Apr 2020 · North Vancouver, BC</p>
             </div>
+          </header>
+          <p class="job-summary">Made a bookkeeping document platform read invoices on its own and stay up under load.</p>
+          <div class="metrics">
+            <div class="metric"><b>99.7%</b><span>less server CPU load</span></div>
+            <div class="metric"><b>30k+</b><span>invoices read each quarter</span></div>
           </div>
-          <ul class="bullets">
-            <li>Designed and built an OCR system with Tesseract inside the existing PHP (CodeIgniter) codebase that reads and parses <b>30,000+ invoice photos</b> a quarter.</li>
-            <li>Built a queue worker system that spreads heavy processing during peak hours, cutting job load on servers by up to <b>99.7%</b> and ending CPU-overload crashes.</li>
-            <li>Prototyped document uploads over SMS with Twilio and a REST API built on the existing back end.</li>
+          <ul class="highlights">
+            <li><b>OCR pipeline:</b> Tesseract built into the PHP (CodeIgniter) codebase to parse invoice photos.</li>
+            <li><b>Queue workers:</b> spread heavy jobs across peak hours and ended CPU-overload crashes.</li>
+            <li><b>SMS uploads:</b> prototyped sending documents by text with Twilio.</li>
           </ul>
           <div class="tags"><span>PHP</span><span>CodeIgniter</span><span>MySQL</span><span>Tesseract</span><span>Linux</span></div>
         </li>
@@ -292,15 +336,40 @@
 
       <div class="mini-grid">
         <a class="glass mini reveal" href="https://github.com/Lian-D/Unipass" target="_blank" rel="noopener"><b>Unipass</b><span>Local encrypted password manager · Java</span></a>
-        <a class="glass mini reveal" href="https://github.com/Lian-D/Travel-Dashboard" target="_blank" rel="noopener"><b>Travel Dashboard</b><span>Personal travel visualization · D3</span></a>
+        <a class="glass mini reveal" href="https://github.com/Lian-D/Go-Green" target="_blank" rel="noopener"><b>Go Green</b><span>Low-carbon travel routes · SAP hackathon</span></a>
         <a class="glass mini reveal" href="https://github.com/Lian-D/SageBot.js" target="_blank" rel="noopener"><b>SageBot</b><span>Discord bot boilerplate · Node.js</span></a>
+      </div>
+    </section>
+
+    <!-- TRAVEL -->
+    <section class="section" id="travel">
+      <div class="section-head reveal">
+        <p class="kicker">04 — Travel</p>
+        <h2>Places I've been.</h2>
+      </div>
+      <div class="glass travel reveal">
+        <div class="travel-bar">
+          <dl class="travel-stats">
+            <div><dt>Cities</dt><dd id="stat-cities">–</dd></div>
+            <div><dt>Countries</dt><dd id="stat-countries">–</dd></div>
+            <div><dt>Years</dt><dd id="stat-years">–</dd></div>
+          </dl>
+          <div class="travel-filters" id="travel-filters" role="group" aria-label="Filter by year"></div>
+        </div>
+        <div class="travel-map" id="travel-map" role="region" aria-label="Map of places visited"></div>
+        <ul class="legend">
+          <li><span class="pin pin-recent"></span>2024 and later</li>
+          <li><span class="pin pin-mid"></span>2016 – 2023</li>
+          <li><span class="pin pin-early"></span>Before 2016</li>
+          <li><span class="pin pin-home"></span>Home</li>
+        </ul>
       </div>
     </section>
 
     <!-- SKILLS + EDUCATION -->
     <section class="section" id="skills">
       <div class="section-head reveal">
-        <p class="kicker">04 — Toolkit</p>
+        <p class="kicker">05 — Toolkit</p>
         <h2>Skills &amp; background.</h2>
       </div>
       <div class="skills-grid">
@@ -340,7 +409,7 @@
     <!-- CONTACT -->
     <section class="section" id="contact">
       <div class="glass contact glow reveal">
-        <p class="kicker">05 — Contact</p>
+        <p class="kicker">06 — Contact</p>
         <h2>Let's build something.</h2>
         <p class="lede">I'm happy to hear about engineering work, interesting problems, or good hiking trails near Vancouver.</p>
         <div class="cta-row center">
@@ -360,5 +429,7 @@
   </footer>
 
   <script src="assets/js/main.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+  <script src="assets/js/travel.js" defer></script>
 </body>
 </html>
